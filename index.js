@@ -8,6 +8,11 @@
 //     expect(theBeatlesPlay(musicians, instruments)).toEqual(["John Lennon plays Guitar", "Paul McCartney plays Bass Guitar", "George Harrison plays Lead Guitar", "Ringo Starr plays Drums"]);
 //   });
 
+const theBeatlesPlay = (array,instruments) => {
+  let result = []; 
+  array.forEach((el,i)=>result.push(`${el} plays ${instruments[i]}`));
+}
+
 //   describe('johnLennonFacts', function(){
 //     it("returns an array of strings with exclamation points", function() {
 //       expect(johnLennonFacts([
@@ -24,6 +29,10 @@
 //     });
 //   });
 
+const johnLennonFacts = array => {
+  return array.map(x=>x + "!!!")
+}
+
 //   describe('iLoveTheBeatles', function() {
 //     it("returns an array of 'I love the Beatles!' 8 times when passed the parameter 7 ", function() {
 //       expect(iLoveTheBeatles(7)).toEqual(["I love the Beatles!", "I love the Beatles!", "I love the Beatles!", "I love the Beatles!", "I love the Beatles!", "I love the Beatles!", "I love the Beatles!", "I love the Beatles!"]);
@@ -35,3 +44,11 @@
 //   });
 
 // });
+
+const iLoveTheBeatles = int => {
+  let result = [];
+  while (result.length < int) {
+    result.push("I love the Beatles!")
+  }
+  return result;
+}
