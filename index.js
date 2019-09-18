@@ -11,6 +11,7 @@
 const theBeatlesPlay = (array,instruments) => {
   let result = []; 
   array.forEach((el,i)=>result.push(`${el} plays ${instruments[i]}`));
+  return result;
 }
 
 //   describe('johnLennonFacts', function(){
