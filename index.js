@@ -47,7 +47,7 @@ const johnLennonFacts = array => {
 
 const iLoveTheBeatles = int => {
   let result = [];
-  while (result.length < int) {
+  while (result.length <= int) {
     result.push("I love the Beatles!")
   }
   return result;
